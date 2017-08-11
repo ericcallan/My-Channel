@@ -126,7 +126,7 @@ class SocialController extends Controller
      * @return \Illuminate\View\View
      */
     private function generateNewProcess($keys, $team_id) {
-        return new Program('test', ['command' => 'php /Users/eric.callan/Sites/HHCC/siphonnew/artisan twitter:stream --track=boston ' . $keys->api_key . ' '  . $keys->api_secret . ' '  . $keys->access_token . ' '  . $keys->access_token_secret . ' ' . $team_id]);
+        return new Program('test', ['command' => 'php ../artisan twitter:stream --track=boston ' . $keys->api_key . ' '  . $keys->api_secret . ' '  . $keys->access_token . ' '  . $keys->access_token_secret . ' ' . $team_id]);
     }
 
 }
